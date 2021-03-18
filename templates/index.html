@@ -1,0 +1,112 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Feedback Form</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+   <link href="{{ url_for('static', filename='css/feedback.css') }}" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+  
+
+  <div>
+  <div class="wrap-contact">
+    <form name="sentMessage" id="survey-form" action = "/" method="post" novalidate>
+      <p id="description" class="contact-title">
+        Feedback Form
+      <p/>
+      
+      <!-- Name input -->
+      <div class="wrap-input">
+        <label id="name-label">Name</label>
+        <input class="input" type="text" name="name" id="name" placeholder="Enter Your Name" required>
+      </div>
+      
+      <!-- Email input -->
+      <div class="wrap-input">
+        <label id="email-label">Email</label>
+        <input class="input" type="email" name="email" id="email" placeholder="Enter Your Email" required>
+      </div>
+      
+          <!-- Contact input -->
+      <div class="wrap-input">
+        <label id="c-label">Contact</label>
+        <input class="input" type="tel" name="contact" id="email" placeholder="Enter Your Contact" required>
+      </div>
+      
+      
+     <div class="w-full">
+      <div class="wrap-contact-form-radio">
+        <label class=label-input>
+          How was your experience?
+        </label>
+
+        <!-- Radio buttons start / Radio button 1-->
+        <div class="contact-form-radio">
+          <input class="input-radio" 
+                 type="radio" name="experience" 
+                 value="Good" checked="checked">
+          <label class=label-radio>
+            Good
+          </label>
+        </div>
+
+        <!-- Radio button 2 -->
+        <div class="contact-form-radio">
+          <input class="input-radio" 
+                 type="radio" name="experience" 
+                 value="Average">
+          <label class=label-radio>
+            Average
+          </label>
+        </div>
+
+        <!-- Radio button 3 -->
+        <div class="contact-form-radio">
+          <input class="input-radio" 
+                 type="radio" name="experience" 
+                 value="Bad">
+          <label class=label-radio>
+            Bad
+          </label>
+        </div>  
+        </div>
+      
+       <!-- Checkboxes -->
+      <div class="wrap-contact-form-range">
+        <label class="label-input">Services Taken</label>
+        
+        <div class="contact-form-range-value">
+          <ul>
+            <li class="checkbox"><label><input name="service" value="Web Development" type="checkbox">Web Development</label></li>
+            <li class="checkbox"><label><input name="service" value="App Development" type="checkbox">App Development</label></li>
+            <li class="checkbox"><label><input name="service" value="Graphic Designing" type="checkbox">Graphic Designing</label></li>
+            <li class="checkbox"><label><input name="service" value="Digital Marketing" type="checkbox">Digital Marketing</label></li>
+          </ul>
+        </div>
+      </div>  
+     </div>
+     
+     <!-- Textarea -->
+     <div class="wrap-input">
+       <label class="label-input">Feedback</label>
+       <textarea class="input" name="feedback" placeholder="Your opinions matter..."></textarea>
+      </div>
+        
+      <!-- Button -->
+      <button id="submit" type="submit">
+          Submit
+          <i class="fa fa-long-arrow-right"></i>
+      </button>
+
+    </form>
+  </div>
+</div>
+
+</body>
+</html>

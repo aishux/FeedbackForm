@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body, html {
+    height: 100%;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background-color: #00ad5f;
+  }
+  
+  h1 {
+    color: #fff;
+    font-weight: 300;
+  }
+  
+  ul, li {
+      margin: 0px;
+      list-style-type: none;
+  }
+  
+  /*--------- FORM -----------*/
+  .wrap-contact {
+    width: 50%;
+    margin: 1.5rem auto;
+    padding: 2rem;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 1.5rem 5rem .25rem rgba(0, 0, 0, 0.575);
+  }
+  
+  .contact-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  
+  .wrap-input {
+    margin: 1rem 0 1rem 1rem;
+    text-align: left;
+    font-size: 1.2rem;
+  }
+  
+  /*--------- INPUTS-----------*/
+  input {
+    outline: none;
+    border: none;
+    font-size: 0.9rem;
+    font-family: inherit;
+    padding: 0.2rem;
+  }
+  
+  textarea {
+    outline: none;
+    border: none;
+    height: 4rem;
+    width: 100%;
+    font-family: inherit;
+  }
+  
+  input::-webkit-input-placeholder,
+  textarea::-webkit-input-placeholder {
+    color: #adadad;
+  }
+  
+  label {
+    display: block;
+  }
+  
+  /*--------- DROPDOWN MENU -----------*/
+  #dropdown {
+    font-family: inherit;
+    font-size: inherit;
+  }
+  
+  /*--------- RADIO BUTTONS -----------*/
+  .w-full {
+    text-align: left;
+    margin: 2rem 0 0 1rem;
+  }
+  
+  .contact-form-radio {
+    display: flex;
+    align-items: center;
+  }
+  
+  .wrap-contact-form-range {
+    margin-top: 20px;
+  }
+  
+  .label-input {
+    margin: 5px 0;
+    font-size: 1.2rem;
+  }
+  
+  .label-radio {
+    margin-left: 5px;
+  }
+  
+  .checkbox input {
+    margin-right: 5px;
+  }
+  
+  /*--------- SUBMIT BUTTON -----------*/
+  button {
+    outline: none;
+      border: none;
+    background: transparent;
+    height: 50px;
+    width: 100%;
+    font-size: 1.1rem;
+    font-family: inherit;
+    line-height: 1.2;
+    background-color: #333;
+    color: #fff;
+    padding: 0 20px;
+    border-radius: 25px;
+    transition: all .4s;
+  }
+  
+  button:hover {
+    background-color: #00ad5f;
+    cursor: pointer;
+  }
+  
+  button:hover i {
+    transform: translateX(10px);
+    transition: all 0.4s;
+  }
+  
+  .fa {
+    display: inline-block;
+    margin-left: 7px;
+    transition: all 0.4s;
+  }
+  
+  
+  /*--------- MEDIA QUERIES -----------*/
+  @media screen and (max-width: 900px) {
+    .wrap-contact {
+      padding: 1rem;
+    }
+  }
+  
+  @media screen and (max-width: 650px) {
+    .wrap-contact {
+      padding: 0.5rem;
+    }
+    
+    .wrap-input,
+    .label-input {
+      font-size: 1rem;
+    }
+    
+    button {
+      height: 40px;
+    }
+    
+    textarea {
+      height: 3rem;
+    }
+  }
