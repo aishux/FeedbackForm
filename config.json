@@ -1,12 +1,12 @@
 {
-    "params":
-    {
-      "local_server":"True",
-      "local_uri": "mysql://root:@localhost/feedback",
-      "prod_uri":"mysql://root:@localhost/feedback",
-      "gmail-user":"name@gmail.com",
-      "gmail-password":"password"
-    
-    }
+  "params":
+  {
+    "local_server":"True",
+    "local_uri": "mysql://root:@localhost/feedback",
+    "prod_uri":"mysql://root:@localhost/feedback",
+    "gmail-user":"name@gmail.com",
+    "gmail-password":"password"
   
   }
+
+}

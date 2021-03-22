@@ -32,7 +32,7 @@ db = SQLAlchemy(app)
 class Contact(db.Model):
     sno = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(80), nullable=False)
-    email = db.Column(db.String(20), nullable=False)
+    email = db.Column(db.String(80), nullable=False)
     contact = db.Column(db.String(12), nullable=False)
     experience = db.Column(db.String(120), nullable=False)
     feedback = db.Column(db.String(120), nullable=True)
@@ -57,6 +57,12 @@ def contact():
                           recipients = [params['gmail-user']],
                           body = name + "\n" + email + "\n" + contact + "\n" + feedback + "\n" + experience + "\n" + service      
                           )
+        mail.send_message('New message from ' + name,
+                          sender=params['gmail-user'],
+                          recipients = [email],
+                          body = "Thankyou for your feedback!"      
+                          )
+      
         return render_template('thankyou.html')
     return render_template('index.html', params=params)
 

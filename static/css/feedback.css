@@ -113,15 +113,15 @@
     font-size: 1.1rem;
     font-family: inherit;
     line-height: 1.2;
-    background-color: #333;
-    color: #fff;
+    background-color: #E6E6FA;
+    color:black;
     padding: 0 20px;
     border-radius: 25px;
     transition: all .4s;
   }
   
   button:hover {
-    background-color: #00ad5f;
+
     cursor: pointer;
   }
   
